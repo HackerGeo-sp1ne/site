@@ -1,0 +1,407 @@
+
+html[data-theme="green"] {
+    --primary-color: #26bc54;
+    --primary-tr: #26bc5460;
+}
+html[data-theme="blue"] {
+    --primary-color: #41ace0;
+    --primary-tr: #41ace060;
+}
+html[data-theme="orange"] {
+    --primary-color: #fe5f18;
+    --primary-tr: #fe5f1860;
+}
+html[data-theme="default"] {
+    --primary-color: #d71628;
+    --primary-tr: #d7162860;
+}
+html[data-theme="purple"] {
+    --primary-color: #bc32fd;
+    --primary-tr: #bc32fd60;
+}
+html[data-theme="yellow"] {
+    --primary-color: #ffdb00;
+    --primary-tr: #ffdb0060;
+}
+html[data-theme="rainbow"] {
+    --primary-color: #fff;
+    --primary-tr: #fff;
+    animation: rainboww 3s linear 0s infinite;
+}
+/*rainboww*/
+@keyframes rainboww{
+    from {
+        --primary-color: #6666ff;
+        --primary-tr: #6666ff;
+    }
+    10% {
+        --primary-color: #0099ff;
+        --primary-tr: #0099ff;
+    }
+    50% {
+        --primary-color: #00ff00;
+        --primary-tr: #00ff00;
+    }
+    75% {
+        --primary-color: #ff3399;
+        --primary-tr: #ff3399;
+    }
+    100% {
+        --primary-color: #6666ff;
+        --primary-tr: #6666ff;
+    }
+}
+/*rainboww*/
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border: 5px solid var(--primary-tr);
+    border-radius: 50px;
+}
+::-webkit-scrollbar {
+    background-color: var(--primary-tr);
+}
+::-webkit-scrollbar-track {
+    background: var(--primary-tr);
+}
+
+body::-webkit-scrollbar {
+    width: 11px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #45474c;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    border: 1px solid #272931;
+}
+
+.pull-right > .text{
+    position: relative;
+    font-size: 12px;
+    background-color: var(--primary-color);
+    color:color-yiq(var(--primary-color));
+    border-radius: 7px;
+    padding: 0 6px;
+}
+#discord-button .icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+  }
+  #discord-button .icon svg {
+    fill: white;
+  }
+  #discord-button a {
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-align: center;
+            align-items: center;
+    padding: 10px 15px;
+    background-color: #7289da;
+    text-decoration: none;
+  }
+  #discord-button a:hover {
+    background-color: #6a7fc9;
+  }
+.color-switcher {
+    position: absolute;
+    margin: 0px auto;
+    left: 0px;
+    right: 0px;
+    z-index: 9;
+
+    background: #272931;
+    margin-top: -30px;
+    padding: 10px 20px 5px 20px;
+    border-radius: 0px 0px 30px 30px;
+
+    border: 1px dashed var(--primary-color);
+    width: fit-content;
+}
+.colorbuttons {
+    display: block;
+    text-align: center;
+}
+.colorbuttons li {
+    display: inline-block;
+    list-style: none;
+}
+.colorbuttons p {
+    color: #aaa;
+    margin-top: -7px;
+    font-size: 12px;
+    margin-bottom: -4px;
+}
+
+
+
+
+.butonas {
+    border: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 25px;
+    border: 2px solid var(--primary-color);
+    background-color: #2f333e;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+.butonas:hover {
+    transition: all 0.5s ease-in-out;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 10px;
+    background-color: var(--primary-tr);
+    color: white;
+}
+.butonas.plinut {
+    background-color: var(--primary-tr);
+}
+.butonas.plinut:hover {
+    background-color: #2f333e;
+}
+
+.butonas.green {
+    background-color: #00800060;
+    border: 2px solid #008000;
+}
+.butonas.green:hover {
+    background-color: #2f333e;
+}
+.butonas.red {
+    background-color: #80000060;
+    border: 2px solid #800000;
+}
+.butonas.red:hover {
+    background-color: #2f333e;
+}
+
+
+.parteners {
+    border:2px solid transparent;
+}
+/*
+    .parteners a:hover {
+        border-color:var(--primary-color);
+        border-radius: 15px;
+    }
+*/
+.scrolut::-webkit-scrollbar {
+    width: 9px;
+}
+.scrolut {
+    width: 800px;
+    height: 310px;
+    overflow-x: auto;
+    background-color: #272931;
+    padding: 10px;
+    border: 1px solid #45474c;
+    flex-direction: column-reverse;
+}
+.scrolut::-webkit-scrollbar-track {
+    background: #45474c;
+    border-radius: 2px;
+}
+.scrolut::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 12px;
+}
+.orangebtn {
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 100%;
+    border: 1px dashed var(--primary-color);
+    background: var(--primary-tr);
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    --primary-color: #fe5f18;
+    --primary-tr: #fe5f1860;
+}
+.purplebtn {
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 100%;
+    border: 1px dashed var(--primary-color);
+    background: var(--primary-tr);
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    --primary-color: #bc32fd;
+    --primary-tr: #bc32fd60;
+}
+.bluebtn {
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 100%;
+    border: 1px dashed var(--primary-color);
+    background: var(--primary-tr);
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    --primary-color: #41ace0;
+    --primary-tr: #41ace060;
+}
+.greenbtn {
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 100%;
+    border: 1px dashed var(--primary-color);
+    background: var(--primary-tr);
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    --primary-color: #26bc54;
+    --primary-tr: #26bc5460;
+}
+.yellowbtn {
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 100%;
+    border: 1px dashed var(--primary-color);
+    background: var(--primary-tr);
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    --primary-color: #ffdb00;
+    --primary-tr: #ffdb0060;
+}
+.rainbowbtn {
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 100%;
+    border: 1px dashed var(--primary-color);
+    background: var(--primary-tr);
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    animation: rainbow 3s linear 0s infinite;
+}
+.defaultbtn {
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 100%;
+    border: 1px dashed var(--primary-color);
+    background: var(--primary-tr);
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    --primary-color: #d71628;
+    --primary-tr: #d7162860;
+}
+
+.img-circleeeeeeeeeeeeeeeeeeeee {
+    border-radius: 100%;
+    position: relative;
+    padding: 2px;
+    background-image: linear-gradient(0, var(--primary-color), 10%, transparent 79%, transparent), linear-gradient(-90deg, var(--primary-color), 50%, transparent, transparent 0);
+    width: 124px;
+    height: 124px;
+}
+.pagination {
+    position: absolute;
+    margin: 0 280px;
+    list-style: none;
+}
+.pagination li {
+    display: inline;
+    text-align: center;
+}
+.pagination a {
+    float: left;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid transparent;
+}
+.pagination a.active {
+    cursor: default;
+}
+.pagination a:active {
+    outline: none;
+}
+
+.modal-3 a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 60%;
+}
+.modal-3 a:hover {
+    background-color: var(--primary-color);
+}
+.modal-3 a.active,
+.modal-3 a:active {
+    background-color: var(--primary-color);
+}
+.title-font {
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 4px;
+    border-radius: 10px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 2px solid var(--primary-color);
+    padding: 3px 12px;
+    font-weight: bold;
+}
+
+
+/*rainbow*/
+@keyframes rainbow{
+    from {
+        border-color: #6666ff;
+        background-color: #6666ff60;
+        --primary-color: #6666ff;
+        --primary-tr: #6666ff;
+    }
+    10% {
+        border-color: #0099ff;
+        background-color: #0099ff60;
+        --primary-color: #0099ff;
+        --primary-tr: #0099ff;
+    }
+    50% {
+        border-color: #00ff00;
+        background-color: #00ff0060;
+        --primary-color: #00ff00;
+        --primary-tr: #00ff00;
+    }
+    75% {
+        border-color: #ff3399;
+        background-color: #ff339960;
+        --primary-color: #ff3399;
+        --primary-tr: #ff3399;
+    }
+    100% {
+        border-color: #6666ff;
+        background-color: #6666ff60;
+        --primary-color: #6666ff;
+        --primary-tr: #6666ff;
+    }
+}
+/*rainbow*/
